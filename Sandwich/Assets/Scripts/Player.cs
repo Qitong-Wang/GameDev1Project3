@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Movement : MonoBehaviour {
+public class Player : MonoBehaviour
+{
     public float speed = 6.0f;
     private CharacterController _characterController;
     public float gravity = -9.8f;
-	// Use this for initialization
-	void Start () {
+    public GameObject raycastObject;
+    public Raycast raycast;
+    // Use this for initialization
+    void Start()
+    {
+        raycast = raycastObject.GetComponent<Raycast>();
         _characterController = GetComponent<CharacterController>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //Movement
+     
         float deltaX = Input.GetAxis("Horizontal") * speed;
         float deltaZ = Input.GetAxis("Vertical") * speed;
         Vector3 movement = new Vector3(deltaX, 0, deltaZ);
@@ -23,5 +31,16 @@ public class Player_Movement : MonoBehaviour {
         movement *= Time.deltaTime;
         movement = transform.TransformDirection(movement);
         _characterController.Move(movement);
-	}
+
+
+        //Click left button of Mouse
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (raycast.objectTouch != null)
+            {
+                Destroy(raycast.objectTouch);
+            }
+        }
+
+    }
 }

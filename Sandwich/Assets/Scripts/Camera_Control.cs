@@ -18,6 +18,8 @@ public class Camera_Control : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (!Input.GetKey(KeyCode.Space))
+        {
         if (axes == RotationAxis.MouseX)
         {
            
@@ -30,5 +32,7 @@ public class Camera_Control : MonoBehaviour {
         }
         float rotationY = transform.localEulerAngles.y;
         transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0); 
+        }
+      
     }   
 }
