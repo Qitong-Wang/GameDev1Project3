@@ -1176,6 +1176,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
   m_IsPrefabAsset: 0
@@ -1240,6 +1252,10 @@ Prefab:
     - target: {fileID: 400000, guid: 578cdb864269aa247af7179fa30d1432, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 578cdb864269aa247af7179fa30d1432, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 578cdb864269aa247af7179fa30d1432, type: 3}
@@ -1367,6 +1383,10 @@ Prefab:
     - target: {fileID: 400000, guid: 7c24d93ece30fa348aade737ad2b3339, type: 3}
       propertyPath: m_LocalScale.z
       value: 23.769047
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7c24d93ece30fa348aade737ad2b3339, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c24d93ece30fa348aade737ad2b3339, type: 3}
@@ -1827,7 +1847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1879801565}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Furniture (Immovable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,6 +1908,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3f0874aca5ebcc246a7a82c12f252482, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3f0874aca5ebcc246a7a82c12f252482, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f0874aca5ebcc246a7a82c12f252482, type: 3}
