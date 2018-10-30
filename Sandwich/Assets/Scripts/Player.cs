@@ -9,11 +9,14 @@ public class Player : MonoBehaviour
     public float gravity = -9.8f;
     public GameObject raycastObject;
     public Raycast raycast;
+    public GameObject DataManager;
+    DataManager dataManager;
     // Use this for initialization
     void Start()
     {
         raycast = raycastObject.GetComponent<Raycast>();
         _characterController = GetComponent<CharacterController>();
+        dataManager = DataManager.GetComponent<DataManager>();
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class Player : MonoBehaviour
         {
             if (raycast.objectTouch != null)
             {
+                dataManager.AddProgress();
                 Destroy(raycast.objectTouch);
             }
         }
