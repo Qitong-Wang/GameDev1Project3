@@ -31,17 +31,24 @@ public class Sandwich : MonoBehaviour {
         agent.destination = dest;
         agent.isStopped = false;
     }
-    public void SelectSandwich() //Player right click the mouse and select the sandwich
-    {
+    public void SelectSandwich(){ //Player right click the mouse and select the sandwich
+        if (goalObject != null)//Needs to cancel the the traveling of sandwich
+        {
+            stopMoving();
+            Stuff s = goalObject.GetComponent<Stuff>();
+            s.CancelSandwich(gameObject);
+            goalObject = null;
+            goal = new Vector3();
+            dataManager.sandwichIdle += 1;
+        }
         if (!dataManager.sandwichWaitingList.Contains(gameObject))
         {
             dataManager.sandwichHolding += 1;
             dataManager.sandwichWaitingList.Add(gameObject);
-            textManager.UpdateSandwich();
-     
         }
-
+        textManager.UpdateSandwich();
     }
+
     public void stopMoving() {
         agent.isStopped = true;
     }

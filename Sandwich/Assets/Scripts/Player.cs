@@ -60,7 +60,6 @@ public class Player : MonoBehaviour
                 //Click right button of Mouse
                 if (Input.GetMouseButtonDown(1))
                 {
-                    print("hit");
                     s.SelectSandwich();
 
                 }

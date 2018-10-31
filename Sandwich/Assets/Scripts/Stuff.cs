@@ -42,7 +42,6 @@ public class Stuff : MonoBehaviour {
         {
             this.Finsish();
         }
-        //print(workingSandwiches);
 
     }
     //After the player left click the sandwich
@@ -66,7 +65,7 @@ public class Stuff : MonoBehaviour {
         }
 
     }
-    //Finish Clean the stuff
+    //Finish Cleaning the stuff
     public virtual void Finsish()
     {
         dataManager.sandwichIdle += workingSandwiches;
@@ -74,24 +73,49 @@ public class Stuff : MonoBehaviour {
         dataManager.AddProgress();
         Destroy(gameObject);
     }
-
+    //A sandwich is trigger a stuff
     private void OnTriggerEnter(Collider other)
     {
-        foreach (GameObject g in this.sandwichWaitingList){
-            if (GameObject.ReferenceEquals(g, other.gameObject))
+        for (int i=0;  i < sandwichWaitingList.Count; i ++)
+        {
+            if (GameObject.ReferenceEquals(sandwichWaitingList[i], other.gameObject))
             {
-                if (workingSandwiches < maximumSandwiches) { 
+                if (workingSandwiches < maximumSandwiches)
+                {
                     workingSandwiches += 1;
                     dataManager.sandwichWorking += 1;
-                    textManager.UpdateSandwich();
                     Destroy(other.gameObject);
-                }
-                if (workingSandwiches == maximumSandwiches)
-                {
-                    this.sandwichWaitingList.Clear();
-                    //Need implement data change and idle stop
+                    sandwichWaitingList.RemoveAt(i);
                     break;
                 }
+            }
+        }
+       
+        //If there are enough sandwiches are working , stop the other traveling sandwiches
+        if (workingSandwiches == maximumSandwiches)
+        {
+            foreach (GameObject g in this.sandwichWaitingList)
+            {
+                Sandwich sandwich = g.GetComponent<Sandwich>();
+                sandwich.stopMoving();
+                dataManager.sandwichIdle += 1;
+            }
+            this.sandwichWaitingList.Clear();
+           
+           
+        }
+        //Update textManager
+        textManager.UpdateSandwich();
+    }
+    //Get the order of cancel a sandwich in the waitlist
+    public void CancelSandwich(GameObject sandwich)
+    {
+        for (int i = 0; i < sandwichWaitingList.Count; i++)
+        {
+            if (GameObject.ReferenceEquals(sandwichWaitingList[i], sandwich))
+            {
+                sandwichWaitingList.RemoveAt(i);
+                break;
             }
         }
     }
