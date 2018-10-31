@@ -18,6 +18,7 @@ public class Sandwich : MonoBehaviour {
     void Start () {
         agent = GetComponent<NavMeshAgent>();
         agent.destination = goal;
+        agent.isStopped = true;
         dataManager = DataManager.GetComponent<DataManager>();
         textManager = TextManager.GetComponent<TextManager>();
     }
