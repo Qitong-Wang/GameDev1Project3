@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
         //Raycast
         if (raycast.objectTouch != null)
         {
-            if (raycast.objectTouch.tag == "Stuff")
+            if (raycast.objectTouch.tag == "Stuff") //The raycast touch a stuff
             {
                 Stuff s = raycast.objectTouch.GetComponent<Stuff>();
                 stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}"
@@ -50,7 +50,19 @@ public class Player : MonoBehaviour
                 //Click left button of Mouse
                 if (Input.GetMouseButtonDown(0))
                 {
-                    s.IncreaseSandwich();
+                    s.OrderSandwich();
+                }
+            }
+            else if (raycast.objectTouch.tag == "Sandwich")//The raycast touch a sandwich
+            {
+                Sandwich s = raycast.objectTouch.GetComponent<Sandwich>();
+                stuffText.text = string.Format("An Idle Sandwich");
+                //Click right button of Mouse
+                if (Input.GetMouseButtonDown(1))
+                {
+                    print("hit");
+                    s.SelectSandwich();
+
                 }
             }
             else
