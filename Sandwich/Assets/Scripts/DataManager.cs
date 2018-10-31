@@ -9,17 +9,18 @@ public class DataManager : MonoBehaviour {
     public int sandwichIdle = 0; //number of sandwiches who are idle
     public int sandwichHolding = 6; //number of sandwiches player is holding
     public int sandwichWorking = 0; //number of sandwiches who are working
-   
+
+    public List<GameObject> sandwichWaitingList;//Sandwich selection list
 
 
 	// Use this for initialization
 	void Start () {
-		
+        sandwichWaitingList = new List<GameObject>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+    
 	}
 
     public void AddProgress()
