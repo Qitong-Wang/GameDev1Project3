@@ -22,6 +22,6 @@ public class Raycast : MonoBehaviour {
             distance = -1f;
             objectTouch = null;
         }
-       // print(distance + " " +touch);
+       print(distance + " " + objectTouch);
 	}
 }

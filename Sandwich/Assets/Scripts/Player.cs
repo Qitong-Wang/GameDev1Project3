@@ -41,10 +41,14 @@ public class Player : MonoBehaviour
         {
             if (raycast.objectTouch != null)
             {
-                dataManager.AddProgress();
-                Destroy(raycast.objectTouch);
+                if (raycast.objectTouch.name == "Stuff")
+                {
+                    Stuff s = raycast.objectTouch.GetComponent<Stuff>();
+                    s.IncreaseSandwich();
+                }
             }
+           
         }
-
+       
     }
 }
