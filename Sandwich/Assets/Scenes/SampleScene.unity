@@ -1114,7 +1114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {x: 0, y: 0, z: 0}
   agent: {fileID: 0}
-  navigating: 0
 --- !u!23 &637989735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1808,7 +1807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 680e2cf41d275f246898bf04524127a7, type: 3}
       propertyPath: m_Layer
