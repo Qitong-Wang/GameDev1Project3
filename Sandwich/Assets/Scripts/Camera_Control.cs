@@ -16,6 +16,10 @@ public class Camera_Control : MonoBehaviour {
     public float _rotationX = 0;
     public float _rotationY = 0;
     // Update is called once per frame
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         if (!Input.GetKey(KeyCode.Space))
