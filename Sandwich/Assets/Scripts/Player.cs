@@ -47,10 +47,14 @@ public class Player : MonoBehaviour
                 Stuff s = raycast.objectTouch.GetComponent<Stuff>();
                 stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}"
                     , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches);
-                //Click left button of Mouse
+                //Click left button of Mouse. Set the goal of sandwiches
                 if (Input.GetMouseButtonDown(0))
                 {
                     s.OrderSandwich();
+                }
+                else
+                {
+
                 }
             }
             else if (raycast.objectTouch.tag == "Sandwich")//The raycast touch a sandwich

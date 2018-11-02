@@ -15,7 +15,10 @@ public class Stuff : MonoBehaviour {
     public GameObject TextManager;
     TextManager textManager;
     public List<GameObject> sandwichWaitingList;//Sandwich selection list
-    Vector3 position;
+    public Vector3 position; //Position of this stuff
+    public GameObject sandwichPrefab; //Sandwich for instantiate
+    public Vector3 releasePos;  //Position of releasing sandwiches
+    public float releaseOffset; //Position of releasing sandwich offset
 
     
 
@@ -71,6 +74,8 @@ public class Stuff : MonoBehaviour {
         dataManager.sandwichIdle += workingSandwiches;
         workingSandwiches = 0;
         dataManager.AddProgress();
+        var temp = new Vector3((releasePos + Random.insideUnitSphere).x, 0, (releasePos + Random.insideUnitSphere).z);
+        Instantiate(sandwichPrefab, temp * releaseOffset, Quaternion.Euler(Vector3.zero));
         Destroy(gameObject);
     }
     //A sandwich is trigger a stuff
@@ -107,6 +112,7 @@ public class Stuff : MonoBehaviour {
         //Update textManager
         textManager.UpdateSandwich();
     }
+    
     //Get the order of cancel a sandwich in the waitlist
     public void CancelSandwich(GameObject sandwich)
     {
@@ -117,6 +123,19 @@ public class Stuff : MonoBehaviour {
                 sandwichWaitingList.RemoveAt(i);
                 break;
             }
+        }
+    }
+    //Player right click a stuff and cancel the work
+    public void CancelWork()
+    {
+        if (workingSandwiches >= 1)
+        {
+            workingSandwiches -= 1;
+            dataManager.sandwichIdle += 1;
+
+            dataManager.sandwichWorking -= 1;
+          
+            textManager.UpdateSandwich();
         }
     }
 }
