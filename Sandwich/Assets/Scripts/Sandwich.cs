@@ -4,18 +4,20 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class Sandwich : MonoBehaviour {
+public class Sandwich : MonoBehaviour
+{
     public Vector3 goal; //The vector of the goal
     public NavMeshAgent agent;
     public bool navigating;
     public GameObject goalObject; //The object of the goal
-    protected GameObject DataManager;
+    GameObject DataManager;
     DataManager dataManager;
-    protected GameObject TextManager;
+    GameObject TextManager;
     TextManager textManager;
-    
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         agent = GetComponent<NavMeshAgent>();
         agent.destination = goal;
         agent.isStopped = true;
@@ -24,16 +26,19 @@ public class Sandwich : MonoBehaviour {
         TextManager = GameObject.FindGameObjectWithTag("TextManager");
         textManager = TextManager.GetComponent<TextManager>();
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
-    public void SetDestination(Vector3 dest) {
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void SetDestination(Vector3 dest)
+    {
         agent.destination = dest;
         agent.isStopped = false;
     }
-    public void SelectSandwich(){ //Player right click the mouse and select the sandwich
+    public void SelectSandwich()
+    { //Player right click the mouse and select the sandwich
         if (goalObject != null)//Needs to cancel the the traveling of sandwich
         {
             stopMoving();
@@ -51,7 +56,8 @@ public class Sandwich : MonoBehaviour {
         textManager.UpdateSandwich();
     }
 
-    public void stopMoving() {
+    public void stopMoving()
+    {
         agent.isStopped = true;
     }
 }

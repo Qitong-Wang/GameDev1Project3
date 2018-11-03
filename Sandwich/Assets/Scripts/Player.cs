@@ -48,15 +48,15 @@ public class Player : MonoBehaviour
                 stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}"
                     , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches);
                 //Click left button of Mouse. Set the goal of sandwiches
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(1))
                 {
                     s.OrderSandwich();
                 }
                 //Click right button of Mouse. Cancel a work.
-                else if (Input.GetMouseButtonDown(1))
+                else if (Input.GetMouseButtonDown(0))
                 {
                     s.CancelWork();
-                
+
                 }
             }
             else if (raycast.objectTouch.tag == "Sandwich")//The raycast touch a sandwich
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
                 Sandwich s = raycast.objectTouch.GetComponent<Sandwich>();
                 stuffText.text = string.Format("An Idle Sandwich");
                 //Click right button of Mouse
-                if (Input.GetMouseButtonDown(1))
+                if (Input.GetMouseButtonDown(0))
                 {
                     s.SelectSandwich();
 
@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
         {
             stuffText.text = "";
         }
-      
+
     }
 
 }

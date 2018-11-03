@@ -4,58 +4,88 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Kitchen : Stuff {
+public class Kitchen : Stuff
+{
     public float workingTime;
     public bool clean = false;
-    DataManager dataManager;
-    TextManager textManager;
-    void Update() 
+
+    void Update()
     {
-        timeCalculate += Time.deltaTime;
         if (clean == false)//Before clean 
         {
-            if (timeCalculate >= 1)//+1S
+            if (workingSandwiches >= 1)
             {
-                currentTime += workingSandwiches;
-                timeCalculate = 0;
+                timeCalculate += Time.deltaTime;
+                if (timeCalculate >= 1) //+1S
+                {
+                    currentTime += workingSandwiches * dataManager.cleanConstant;
+                    timeCalculate = 0;
+                }
+                timeBar.fillAmount = currentTime / maximumTime;
             }
-            timeBar.fillAmount = currentTime / maximumTime;
             if (currentTime >= maximumTime)
             {
                 currentTime = 0;
                 this.Finsish();
+                timeBar.color = Color.yellow;
+
             }
         }
         else //After clean. Just produce more sandwich
         {
-            if (timeCalculate >= 1) //+1S
+            if (workingSandwiches >= 1)
             {
-                currentTime += workingSandwiches;
-                timeCalculate = 0;
+                timeCalculate += Time.deltaTime;
+                if (timeCalculate >= 1) //+1S
+                {
+                    currentTime += workingSandwiches;
+                    timeCalculate = 0;
+                }
+                timeBar.fillAmount = currentTime / workingTime;
             }
-            timeBar.fillAmount = currentTime / workingTime;
             if (currentTime >= workingTime)
             {
-                currentTime = 0;
                 this.Produce();
+                currentTime = 0;
             }
         }
-       
+
     }
     public override void Finsish()
     {
-        dataManager.sandwichIdle += workingSandwiches;
-        workingSandwiches = 0;
+        if (workingSandwiches > 1)
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            , gameObject.name, workingSandwiches);
+        }
+        else
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            , gameObject.name, workingSandwiches);
+        }
+        //Increase progress
         dataManager.AddProgress();
-        //Release Idle
+        //Release the same amount of sandwich
+        for (int i = 1; i <= workingSandwiches; i++)
+        {
+            InstantiateSandwich();
+            dataManager.sandwichWorking -= 1;
+            dataManager.sandwichIdle += 1;
+        }
+        workingSandwiches = 0;
+        //Is able to produce new sandwich
         clean = true;
+        textManager.UpdateSandwich();
+        timeBar.fillAmount = currentTime / maximumTime;
     }
-
+    //Produce new sandwiches
     public void Produce()
     {
-        dataManager.sandwichIdle += workingSandwiches;
-        workingSandwiches = 0;
-        dataManager.AddProgress();
+        newsText.text = string.Format("{0} produced 1 new sandwich", gameObject.name);
+        dataManager.sandwichIdle += 1;
+        dataManager.sandwichTotal += 1;
+        InstantiateSandwich();
+        textManager.UpdateSandwich();
     }
-	
+
 }
