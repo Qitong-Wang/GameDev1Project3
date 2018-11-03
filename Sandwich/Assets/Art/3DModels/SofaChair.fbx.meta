@@ -7,17 +7,29 @@ ModelImporter:
     100002: R_cushion
     100004: R_cushion_top
     100006: //RootNode
+    100008: Base 1
+    100010: group1
+    100012: transform1
+    100014: transform2
+    100016: transform3
     400000: Base
     400002: R_cushion
     400004: R_cushion_top
     400006: //RootNode
+    400008: Base 1
+    400010: group1
+    400012: transform1
+    400014: transform2
+    400016: transform3
     2100000: lambert1
     2300000: Base
     2300002: R_cushion
     2300004: R_cushion_top
+    2300006: //RootNode
     3300000: Base
     3300002: R_cushion
     3300004: R_cushion_top
+    3300006: //RootNode
     4300000: Base
     4300002: R_cushion
     4300004: R_cushion_top
