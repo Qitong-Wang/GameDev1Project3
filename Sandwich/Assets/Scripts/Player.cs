@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public float gravity = -9.8f;
     public GameObject raycastObject;
     public Raycast raycast;
+    public GameObject DataManager;
+    DataManager dataManager;
     public GameObject StuffText;
     Text stuffText;
     // Use this for initialization
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
     {
         raycast = raycastObject.GetComponent<Raycast>();
         _characterController = GetComponent<CharacterController>();
+        dataManager = DataManager.GetComponent<DataManager>();
         stuffText = StuffText.GetComponent<Text>();
     }
 
@@ -42,30 +45,8 @@ public class Player : MonoBehaviour
             if (raycast.objectTouch.tag == "Stuff") //The raycast touch a stuff
             {
                 Stuff s = raycast.objectTouch.GetComponent<Stuff>();
-                if (raycast.objectTouch.name == "Kitchen")
-                {
-                    Kitchen k = raycast.objectTouch.GetComponent<Kitchen>();
-                    if (k.clean == false)//Is cleaning
-                    {
-                        stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
-                                                                , raycast.objectTouch.name, k.workingSandwiches, k.maximumSandwiches, k.currentTime, k.maximumTime);
-
-                    }
-                    else //Is producing new sandwiches
-                    {
-                        stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
-                                                               , raycast.objectTouch.name, k.workingSandwiches, k.maximumSandwiches, k.currentTime, k.workingTime);
-
-                    }
-
-                }
-                else
-                {
-                    
-                    stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
-                                        , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches,s.currentTime,s.maximumTime);
-                }
-                
+                stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}"
+                    , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches);
                 //Click left button of Mouse. Set the goal of sandwiches
                 if (Input.GetMouseButtonDown(1))
                 {

@@ -26,7 +26,7 @@ public class Kitchen : Stuff
             if (currentTime >= maximumTime)
             {
                 currentTime = 0;
-                this.Finish();
+                this.Finsish();
                 timeBar.color = Color.yellow;
 
             }
@@ -51,7 +51,7 @@ public class Kitchen : Stuff
         }
 
     }
-    public override void Finish()
+    public override void Finsish()
     {
         if (workingSandwiches > 1)
         {
@@ -64,14 +64,7 @@ public class Kitchen : Stuff
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
-        if (dataManager.cleanProgress + this.increaseProcess <= 1f)
-        {
-            dataManager.cleanProgress += this.increaseProcess;
-        }
-        else
-        {
-            dataManager.cleanProgress = 1f;
-        }
+        dataManager.AddProgress();
         //Release the same amount of sandwich
         for (int i = 1; i <= workingSandwiches; i++)
         {

@@ -18,11 +18,10 @@ public class Stuff : MonoBehaviour
     protected GameObject NewsText;
     protected Text newsText;
     protected List<GameObject> sandwichWaitingList;//Sandwich selection list
-    protected Vector3 position; //Position of this stuff
+    public Vector3 position; //Position of this stuff
     public GameObject sandwichPrefab; //Sandwich for instantiate
     public Vector3 releasePos;  //Position of releasing sandwiches
     public float releaseOffset; //Position of releasing sandwich offset
-    public float increaseProcess = 0.15f;
 
 
 
@@ -57,7 +56,7 @@ public class Stuff : MonoBehaviour
         }
         if (currentTime >= maximumTime)
         {
-            this.Finish();
+            this.Finsish();
         }
 
 
@@ -80,7 +79,7 @@ public class Stuff : MonoBehaviour
         textManager.UpdateSandwich();
     }
     //Finish Cleaning the stuff
-    public virtual void Finish()
+    public virtual void Finsish()
     {
         if (workingSandwiches > 1)
         {
@@ -93,15 +92,7 @@ public class Stuff : MonoBehaviour
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
-        if (dataManager.cleanProgress + this.increaseProcess <= 1f)
-        {
-            dataManager.cleanProgress += this.increaseProcess;
-        }
-        else
-        {
-            dataManager.cleanProgress = 1f;
-        }
-       
+        dataManager.AddProgress();
         //Release the same amount of sandwich
         for (int i = 1; i <= workingSandwiches; i++)
         {
