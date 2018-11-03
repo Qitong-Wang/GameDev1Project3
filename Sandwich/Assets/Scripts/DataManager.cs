@@ -11,6 +11,7 @@ public class DataManager : MonoBehaviour
     public int sandwichWorking = 0; //number of sandwiches who are working
     public float cleanConstant = 1f; //Constant that a sandwich's working efficient
     public bool goodEnding = false;
+    public bool frontDoorOpen = false;
     public List<GameObject> sandwichWaitingList;//Sandwich selection list
 
 

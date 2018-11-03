@@ -9,7 +9,12 @@ public class Stuff : MonoBehaviour
     public int workingSandwiches; //The number of sandwiches who are working here
     public float maximumTime;
     public float currentTime = 0f; //The initial time to complete the whole work
-    public float timeCalculate = 0f; //Jump from 0 to 1
+    public GameObject sandwichPrefab; //Sandwich for instantiate
+    public Vector3 releasePos;  //Position of releasing sandwiches
+    public float releaseOffset; //Position of releasing sandwich offset
+    public float increaseProcess = 0.15f;
+
+    protected float timeCalculate = 0f; //Jump from 0 to 1
     protected Image timeBar;
     protected GameObject DataManager;
     protected DataManager dataManager;
@@ -19,10 +24,7 @@ public class Stuff : MonoBehaviour
     protected Text newsText;
     protected List<GameObject> sandwichWaitingList;//Sandwich selection list
     protected Vector3 position; //Position of this stuff
-    public GameObject sandwichPrefab; //Sandwich for instantiate
-    public Vector3 releasePos;  //Position of releasing sandwiches
-    public float releaseOffset; //Position of releasing sandwich offset
-    public float increaseProcess = 0.15f;
+  
 
 
 
