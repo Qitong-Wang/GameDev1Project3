@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Stuff
   - Sandwich
+  - DataManager
+  - TextManager
   layers:
   - Default
   - TransparentFX

@@ -52,9 +52,11 @@ public class Player : MonoBehaviour
                 {
                     s.OrderSandwich();
                 }
-                else
+                //Click right button of Mouse. Cancel a work.
+                else if (Input.GetMouseButtonDown(1))
                 {
-
+                    s.CancelWork();
+                
                 }
             }
             else if (raycast.objectTouch.tag == "Sandwich")//The raycast touch a sandwich
