@@ -18,7 +18,9 @@ public class TextManager : MonoBehaviour
     //Use for Status Text
     public GameObject StatusText;
     Text statusText;
-    //Use for Stuff Text
+    //Use for News Text
+    public GameObject NewsText;
+    Text newsText;
 
 
 

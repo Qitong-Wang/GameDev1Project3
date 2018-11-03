@@ -10,12 +10,14 @@ public class Stuff : MonoBehaviour
     public float maximumTime;
     public float currentTime = 0f; //The initial time to complete the whole work
     public float timeCalculate = 0f; //Jump from 0 to 1
-    public Image timeBar;
-    public GameObject DataManager;
-    public DataManager dataManager;
-    public GameObject TextManager;
-    public TextManager textManager;
-    public List<GameObject> sandwichWaitingList;//Sandwich selection list
+    protected Image timeBar;
+    protected GameObject DataManager;
+    protected DataManager dataManager;
+    protected GameObject TextManager;
+    protected TextManager textManager;
+    protected GameObject NewsText;
+    protected Text newsText;
+    protected List<GameObject> sandwichWaitingList;//Sandwich selection list
     public Vector3 position; //Position of this stuff
     public GameObject sandwichPrefab; //Sandwich for instantiate
     public Vector3 releasePos;  //Position of releasing sandwiches
@@ -32,6 +34,8 @@ public class Stuff : MonoBehaviour
         TextManager = GameObject.FindGameObjectWithTag("TextManager");
         textManager = TextManager.GetComponent<TextManager>();
         sandwichWaitingList = new List<GameObject>();
+        NewsText = GameObject.FindGameObjectWithTag("NewsText");
+        newsText = NewsText.GetComponent<Text>();
         position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
         timeBar.fillAmount = currentTime / maximumTime;
 
@@ -77,12 +81,24 @@ public class Stuff : MonoBehaviour
     //Finish Cleaning the stuff
     public virtual void Finsish()
     {
+        if (workingSandwiches > 1)
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            , gameObject.name, workingSandwiches);
+        }
+        else
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwich"
+            , gameObject.name, workingSandwiches);
+        }
         //Increase progress
         dataManager.AddProgress();
         //Release the same amount of sandwich
         for (int i = 1; i <= workingSandwiches; i++)
         {
             InstantiateSandwich();
+            dataManager.sandwichWorking -= 1;
+            dataManager.sandwichIdle += 1;
         }
         workingSandwiches = 0;
         textManager.UpdateSandwich();

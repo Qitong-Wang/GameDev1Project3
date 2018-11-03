@@ -53,13 +53,24 @@ public class Kitchen : Stuff
     }
     public override void Finsish()
     {
-
+        if (workingSandwiches > 1)
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            , gameObject.name, workingSandwiches);
+        }
+        else
+        {
+            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            , gameObject.name, workingSandwiches);
+        }
         //Increase progress
         dataManager.AddProgress();
         //Release the same amount of sandwich
         for (int i = 1; i <= workingSandwiches; i++)
         {
             InstantiateSandwich();
+            dataManager.sandwichWorking -= 1;
+            dataManager.sandwichIdle += 1;
         }
         workingSandwiches = 0;
         //Is able to produce new sandwich
@@ -70,6 +81,7 @@ public class Kitchen : Stuff
     //Produce new sandwiches
     public void Produce()
     {
+        newsText.text = string.Format("{0} produced 1 new sandwich", gameObject.name);
         dataManager.sandwichIdle += 1;
         dataManager.sandwichTotal += 1;
         InstantiateSandwich();

@@ -8,6 +8,7 @@ TagManager:
   - Sandwich
   - DataManager
   - TextManager
+  - NewsText
   layers:
   - Default
   - TransparentFX
