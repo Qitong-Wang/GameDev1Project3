@@ -9,9 +9,9 @@ public class Sandwich : MonoBehaviour {
     public NavMeshAgent agent;
     public bool navigating;
     public GameObject goalObject; //The object of the goal
-    public GameObject DataManager;
+    protected GameObject DataManager;
     DataManager dataManager;
-    public GameObject TextManager;
+    protected GameObject TextManager;
     TextManager textManager;
     
     // Use this for initialization
@@ -19,7 +19,9 @@ public class Sandwich : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
         agent.destination = goal;
         agent.isStopped = true;
+        DataManager = GameObject.FindGameObjectWithTag("DataManager");
         dataManager = DataManager.GetComponent<DataManager>();
+        TextManager = GameObject.FindGameObjectWithTag("TextManager");
         textManager = TextManager.GetComponent<TextManager>();
     }
 	

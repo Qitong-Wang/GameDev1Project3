@@ -29,53 +29,58 @@ public class Stuff : MonoBehaviour {
         textManager = TextManager.GetComponent<TextManager>();
         sandwichWaitingList = new List<GameObject>();
         position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
+        timeBar.fillAmount = currentTime / maximumTime;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        timeCalculate += Time.deltaTime;
-        if (timeCalculate >= 1)
+        if (workingSandwiches >= 1)
         {
-            currentTime += workingSandwiches;
-            timeCalculate = 0;
+            timeCalculate += Time.deltaTime;
+            if (timeCalculate >= 1) //+1S
+            {
+                currentTime += workingSandwiches * dataManager.cleanConstant;
+                timeCalculate = 0;
+            }
+            timeBar.fillAmount = currentTime / maximumTime;
         }
-        timeBar.fillAmount = currentTime / maximumTime;
         if (currentTime >= maximumTime)
         {
             this.Finsish();
         }
+        
 
     }
     //After the player left click the sandwich
     public void OrderSandwich()
     {
-        //Prevent mistake touch
-        if (dataManager.sandwichWaitingList!= null)
-        {
-            //Copy the dataManager.sandwichWaitingList to the stuff's waiting list
-            this.sandwichWaitingList = new List<GameObject>(dataManager.sandwichWaitingList);
-            dataManager.sandwichWaitingList.Clear();
-            foreach (GameObject g in this.sandwichWaitingList)
+        //Copy the dataManager.sandwichWaitingList to the stuff's waiting list
+        this.sandwichWaitingList.AddRange(dataManager.sandwichWaitingList);
+        foreach (GameObject g in dataManager.sandwichWaitingList)
             {
                 Sandwich s = g.GetComponent<Sandwich>();
                 s.SetDestination(this.position);
                 s.goalObject = gameObject;
                 dataManager.sandwichIdle -= 1;
                 dataManager.sandwichHolding -= 1;
-                textManager.UpdateSandwich();
+                
             }
-        }
-
+        dataManager.sandwichWaitingList.Clear();
+        textManager.UpdateSandwich();
     }
     //Finish Cleaning the stuff
     public virtual void Finsish()
-    {
-        dataManager.sandwichIdle += workingSandwiches;
-        workingSandwiches = 0;
+    { 
+        //Increase progress
         dataManager.AddProgress();
-        var temp = new Vector3((releasePos + Random.insideUnitSphere).x, 0, (releasePos + Random.insideUnitSphere).z);
-        Instantiate(sandwichPrefab, temp * releaseOffset, Quaternion.Euler(Vector3.zero));
+        //Release the same amount of sandwich
+        for (int i = 1; i<= workingSandwiches; i++)
+        {
+            InstantiateSandwich();
+        }
+        workingSandwiches = 0;
+        textManager.UpdateSandwich();
         Destroy(gameObject);
     }
     //A sandwich is trigger a stuff
@@ -83,6 +88,7 @@ public class Stuff : MonoBehaviour {
     {
         for (int i=0;  i < sandwichWaitingList.Count; i ++)
         {
+            //Sandwich is in the list
             if (GameObject.ReferenceEquals(sandwichWaitingList[i], other.gameObject))
             {
                 if (workingSandwiches < maximumSandwiches)
@@ -124,6 +130,7 @@ public class Stuff : MonoBehaviour {
                 break;
             }
         }
+        textManager.UpdateSandwich();
     }
     //Player right click a stuff and cancel the work
     public void CancelWork()
@@ -131,11 +138,17 @@ public class Stuff : MonoBehaviour {
         if (workingSandwiches >= 1)
         {
             workingSandwiches -= 1;
-            dataManager.sandwichIdle += 1;
-
-            dataManager.sandwichWorking -= 1;
-          
-            textManager.UpdateSandwich();
+            InstantiateSandwich();
+    
         }
+        textManager.UpdateSandwich();
+    }
+    //Instantiate a sandwich 
+    public void InstantiateSandwich()
+    {
+        var temp = new Vector3((releasePos + Random.insideUnitSphere).x, 0, (releasePos + Random.insideUnitSphere).z);
+        Instantiate(sandwichPrefab, temp * releaseOffset, Quaternion.Euler(Vector3.zero));
+        dataManager.sandwichIdle += 1;
+        dataManager.sandwichWorking -= 1;
     }
 }
