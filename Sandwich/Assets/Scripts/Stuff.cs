@@ -9,7 +9,12 @@ public class Stuff : MonoBehaviour
     public int workingSandwiches; //The number of sandwiches who are working here
     public float maximumTime;
     public float currentTime = 0f; //The initial time to complete the whole work
-    public float timeCalculate = 0f; //Jump from 0 to 1
+    public GameObject sandwichPrefab; //Sandwich for instantiate
+    public Vector3 releasePos;  //Position of releasing sandwiches
+    public float releaseOffset; //Position of releasing sandwich offset
+    public float increaseProcess = 0.15f;
+
+    protected float timeCalculate = 0f; //Jump from 0 to 1
     protected Image timeBar;
     protected GameObject DataManager;
     protected DataManager dataManager;
@@ -18,10 +23,8 @@ public class Stuff : MonoBehaviour
     protected GameObject NewsText;
     protected Text newsText;
     protected List<GameObject> sandwichWaitingList;//Sandwich selection list
-    public Vector3 position; //Position of this stuff
-    public GameObject sandwichPrefab; //Sandwich for instantiate
-    public Vector3 releasePos;  //Position of releasing sandwiches
-    public float releaseOffset; //Position of releasing sandwich offset
+    protected Vector3 position; //Position of this stuff
+  
 
 
 
@@ -56,7 +59,7 @@ public class Stuff : MonoBehaviour
         }
         if (currentTime >= maximumTime)
         {
-            this.Finsish();
+            this.Finish();
         }
 
 
@@ -79,20 +82,28 @@ public class Stuff : MonoBehaviour
         textManager.UpdateSandwich();
     }
     //Finish Cleaning the stuff
-    public virtual void Finsish()
+    public virtual void Finish()
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by\n {1} sandwiches"
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwich"
+            newsText.text = string.Format("{0} was cleaned by\n {1} sandwich"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
-        dataManager.AddProgress();
+        if (dataManager.cleanProgress + this.increaseProcess <= 1f)
+        {
+            dataManager.cleanProgress += this.increaseProcess;
+        }
+        else
+        {
+            dataManager.cleanProgress = 1f;
+        }
+
         //Release the same amount of sandwich
         for (int i = 1; i <= workingSandwiches; i++)
         {
@@ -101,6 +112,15 @@ public class Stuff : MonoBehaviour
             dataManager.sandwichIdle += 1;
         }
         workingSandwiches = 0;
+
+        //Relase the sandwich in the waiting list
+        foreach (GameObject sandwich in sandwichWaitingList)
+        {
+            Sandwich s = sandwich.GetComponent<Sandwich>();
+            s.stopMoving();
+            dataManager.sandwichIdle += 1;
+        }
+       
         textManager.UpdateSandwich();
         Destroy(gameObject);
     }
