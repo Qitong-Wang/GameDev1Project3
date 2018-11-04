@@ -86,12 +86,12 @@ public class Stuff : MonoBehaviour
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by\n {1} sandwiches"
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwich"
+            newsText.text = string.Format("{0} was cleaned by\n {1} sandwich"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
@@ -112,6 +112,15 @@ public class Stuff : MonoBehaviour
             dataManager.sandwichIdle += 1;
         }
         workingSandwiches = 0;
+
+        //Relase the sandwich in the waiting list
+        foreach (GameObject sandwich in sandwichWaitingList)
+        {
+            Sandwich s = sandwich.GetComponent<Sandwich>();
+            s.stopMoving();
+            dataManager.sandwichIdle += 1;
+        }
+       
         textManager.UpdateSandwich();
         Destroy(gameObject);
     }

@@ -47,13 +47,13 @@ public class Player : MonoBehaviour
                     Kitchen k = raycast.objectTouch.GetComponent<Kitchen>();
                     if (k.clean == false)//Is cleaning
                     {
-                        stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
+                        stuffText.text = string.Format("{0}\nWorking Sandwiches:  {1}/{2}\nWorking Process:       {3}/{4}"
                                                                 , raycast.objectTouch.name, k.workingSandwiches, k.maximumSandwiches, k.currentTime, k.maximumTime);
 
                     }
                     else //Is producing new sandwiches
                     {
-                        stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
+                        stuffText.text = string.Format("{0}\nWorking Sandwiches:  {1}/{2}\nWorking Process:       {3}/{4}"
                                                                , raycast.objectTouch.name, k.workingSandwiches, k.maximumSandwiches, k.currentTime, k.workingTime);
 
                     }
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
                 else
                 {
 
-                    stuffText.text = string.Format("{0}\nWorking Sandwiches: {1}/{2}\n Working Process: {3}/{4}"
+                    stuffText.text = string.Format("{0}\nWorking Sandwiches:  {1}/{2}\nWorking Process:       {3}/{4}"
                                         , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches, s.currentTime, s.maximumTime);
                 }
 
