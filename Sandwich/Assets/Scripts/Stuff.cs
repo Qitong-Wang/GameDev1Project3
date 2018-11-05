@@ -24,7 +24,7 @@ public class Stuff : MonoBehaviour
     protected Text newsText;
     protected List<GameObject> sandwichWaitingList;//Sandwich selection list
     protected Vector3 position; //Position of this stuff
-  
+    protected Transform smoke;
 
 
 
@@ -32,6 +32,7 @@ public class Stuff : MonoBehaviour
     void Start()
     {
         timeBar = transform.Find("StuffCanvas").Find("TimeBG").Find("Time").GetComponent<Image>();
+        smoke = transform.Find("Smoke");
         DataManager = GameObject.FindGameObjectWithTag("DataManager");
         dataManager = DataManager.GetComponent<DataManager>();
         TextManager = GameObject.FindGameObjectWithTag("TextManager");
@@ -49,6 +50,7 @@ public class Stuff : MonoBehaviour
     {
         if (workingSandwiches >= 1)
         {
+            
             timeCalculate += Time.deltaTime;
             if (timeCalculate >= 1) //+1S
             {
@@ -57,6 +59,7 @@ public class Stuff : MonoBehaviour
             }
             timeBar.fillAmount = currentTime / maximumTime;
         }
+       
         if (currentTime >= maximumTime)
         {
             this.Finish();
@@ -86,12 +89,12 @@ public class Stuff : MonoBehaviour
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} was cleaned by\n {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by\n{1} sandwiches"
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} was cleaned by\n {1} sandwich"
+            newsText.text = string.Format("{0} was cleaned by\n{1} sandwich"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
@@ -134,6 +137,7 @@ public class Stuff : MonoBehaviour
             {
                 if (workingSandwiches < maximumSandwiches)
                 {
+                    smoke.gameObject.SetActive(true);
                     workingSandwiches += 1;
                     dataManager.sandwichWorking += 1;
                     Destroy(other.gameObject);
@@ -182,6 +186,10 @@ public class Stuff : MonoBehaviour
             InstantiateSandwich();
             dataManager.sandwichIdle += 1;
             dataManager.sandwichWorking -= 1;
+        }
+        if (workingSandwiches < 1)
+        {
+            smoke.gameObject.SetActive(false);
         }
         textManager.UpdateSandwich();
     }
