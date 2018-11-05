@@ -39,7 +39,7 @@ public class TextManager : MonoBehaviour
         if (totalTime >= 1)
         {
             second--;
-            timeText.text = string.Format("Time Remaining: {0:00}:{1:00}\n Working Progress: {2:00}%", ((int)second / 60), second % 60, ((int)(dataManager.cleanProgress * 100)));
+            timeText.text = string.Format("Time Remaining: {0:00}:{1:00}\nWorking Progress:  {2:00}%", ((int)second / 60), second % 60, ((int)(dataManager.cleanProgress * 100)));
             totalTime = 0;
 
         }

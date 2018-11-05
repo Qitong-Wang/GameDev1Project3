@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 195874009216200864}
   - component: {fileID: 136190555635518156}
   - component: {fileID: 54278170647410892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich
   m_TagString: Sandwich
   m_Icon: {fileID: 0}
@@ -117,8 +117,6 @@ MonoBehaviour:
   agent: {fileID: 0}
   navigating: 0
   goalObject: {fileID: 0}
-  DataManager: {fileID: 0}
-  TextManager: {fileID: 0}
 --- !u!136 &136190555635518156
 CapsuleCollider:
   m_ObjectHideFlags: 1
