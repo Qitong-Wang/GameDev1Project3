@@ -55,6 +55,24 @@ public class Sandwich : MonoBehaviour
         }
         textManager.UpdateSandwich();
     }
+    //Deselect Sandwich when the sandwich is idling
+    public void DeselectSandwich()
+    {
+        if (goalObject == null)
+        {
+            for (int i = 0; i<dataManager.sandwichWaitingList.Count; i++)
+            {
+                if (GameObject.ReferenceEquals(dataManager.sandwichWaitingList[i], gameObject))
+                {
+                    dataManager.sandwichWaitingList.RemoveAt(i);
+                    dataManager.sandwichHolding -= 1;
+                    break;
+                   
+                }
+            }
+        }
+        textManager.UpdateSandwich();
+    }
 
     public void stopMoving()
     {

@@ -66,13 +66,13 @@ public class Player : MonoBehaviour
                                         , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches, s.currentTime, s.maximumTime);
                 }
 
-                //Click left button of Mouse. Set the goal of sandwiches
-                if (Input.GetMouseButtonDown(1))
+                //Click right button of Mouse. Set the goal of sandwiches
+                if (Input.GetMouseButtonDown(0))
                 {
                     s.OrderSandwich();
                 }
-                //Click right button of Mouse. Cancel a work.
-                else if (Input.GetMouseButtonDown(0))
+                //Click left button of Mouse. Cancel a work.
+                else if (Input.GetMouseButtonDown(1))
                 {
                     s.CancelWork();
 
@@ -82,12 +82,18 @@ public class Player : MonoBehaviour
             {
                 Sandwich s = raycast.objectTouch.GetComponent<Sandwich>();
                 stuffText.text = string.Format("An Idle Sandwich");
-                //Click right button of Mouse
+                //Click left button of Mouse. Select a sandwich
                 if (Input.GetMouseButtonDown(0))
                 {
                     s.SelectSandwich();
 
                 }
+                //Click right button of Mouse. Deselect a sandwich
+                else if (Input.GetMouseButtonDown(1))
+                {
+                    s.DeselectSandwich();
+                }
+
             }
             else
             {
