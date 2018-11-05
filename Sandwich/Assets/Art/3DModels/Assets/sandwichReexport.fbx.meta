@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: cc6fdd3ad52d90642800706237615b85
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BottomSlice
+    100002: L_ankle
+    100004: L_arm_pole_CTRL
+    100006: L_arm_pole_CTRL_GRP
+    100008: L_ball
+    100010: L_elbow
+    100012: L_foot_CTRL
+    100014: L_foot_CTRL_GRP
+    100016: L_hand_tip
+    100018: L_hip
+    100020: L_knee
+    100022: L_leg_pole_CTRL
+    100024: L_leg_pole_CTRL_GRP
+    100026: L_rev_ball_CTRL
+    100028: L_rev_ball_CTRL_GRP
+    100030: L_shoulder
+    100032: L_toe
+    100034: L_toe_CTRL
+    100036: L_toe_CTRL_GRP
+    100038: L_wrist
+    100040: L_wrist_CTRL
+    100042: L_wrist_CTRL_GRP
+    100044: Lettuce
+    100046: lower_body_root
+    100048: lower_body_root_CTRL
+    100050: lower_body_root_CTRL_GRP
+    100052: main_CTRL
+    100054: Meat1
+    100056: Meat2
+    100058: neck
+    100060: neck_CTRL
+    100062: neck_CTRL_GRP
+    100064: R__hand_tip
+    100066: R_ankle
+    100068: R_arm_pole_CTRL
+    100070: R_arm_pole_CTRL_GRP
+    100072: R_ball
+    100074: R_elbow
+    100076: R_foot_CTRL
+    100078: R_foot_CTRL_GRP
+    100080: R_hip
+    100082: R_knee
+    100084: R_leg_pole_CTRL
+    100086: R_leg_pole_CTRL_GRP
+    100088: R_rev_ball_CTRL
+    100090: R_rev_ball_CTRL_GRP
+    100092: R_shoulder
+    100094: R_toe
+    100096: R_toe_CTRL
+    100098: R_toe_CTRL_GRP
+    100100: R_wrist
+    100102: R_wrist_CTRL
+    100104: R_wrist_CTRL_GRP
+    100106: root
+    100108: Sandwich_CTRL
+    100110: Sandwich_GEO
+    100112: Sandwich_SKEL
+    100114: //RootNode
+    100116: spine_mid
+    100118: spine_mid_CTRL
+    100120: spine_mid_CTRL_GRP
+    100122: spine_torso
+    100124: stick_mid
+    100126: stick_top
+    100128: TopSlice
+    100130: upper_body_root
+    400000: BottomSlice
+    400002: L_ankle
+    400004: L_arm_pole_CTRL
+    400006: L_arm_pole_CTRL_GRP
+    400008: L_ball
+    400010: L_elbow
+    400012: L_foot_CTRL
+    400014: L_foot_CTRL_GRP
+    400016: L_hand_tip
+    400018: L_hip
+    400020: L_knee
+    400022: L_leg_pole_CTRL
+    400024: L_leg_pole_CTRL_GRP
+    400026: L_rev_ball_CTRL
+    400028: L_rev_ball_CTRL_GRP
+    400030: L_shoulder
+    400032: L_toe
+    400034: L_toe_CTRL
+    400036: L_toe_CTRL_GRP
+    400038: L_wrist
+    400040: L_wrist_CTRL
+    400042: L_wrist_CTRL_GRP
+    400044: Lettuce
+    400046: lower_body_root
+    400048: lower_body_root_CTRL
+    400050: lower_body_root_CTRL_GRP
+    400052: main_CTRL
+    400054: Meat1
+    400056: Meat2
+    400058: neck
+    400060: neck_CTRL
+    400062: neck_CTRL_GRP
+    400064: R__hand_tip
+    400066: R_ankle
+    400068: R_arm_pole_CTRL
+    400070: R_arm_pole_CTRL_GRP
+    400072: R_ball
+    400074: R_elbow
+    400076: R_foot_CTRL
+    400078: R_foot_CTRL_GRP
+    400080: R_hip
+    400082: R_knee
+    400084: R_leg_pole_CTRL
+    400086: R_leg_pole_CTRL_GRP
+    400088: R_rev_ball_CTRL
+    400090: R_rev_ball_CTRL_GRP
+    400092: R_shoulder
+    400094: R_toe
+    400096: R_toe_CTRL
+    400098: R_toe_CTRL_GRP
+    400100: R_wrist
+    400102: R_wrist_CTRL
+    400104: R_wrist_CTRL_GRP
+    400106: root
+    400108: Sandwich_CTRL
+    400110: Sandwich_GEO
+    400112: Sandwich_SKEL
+    400114: //RootNode
+    400116: spine_mid
+    400118: spine_mid_CTRL
+    400120: spine_mid_CTRL_GRP
+    400122: spine_torso
+    400124: stick_mid
+    400126: stick_top
+    400128: TopSlice
+    400130: upper_body_root
+    2100000: lambert1
+    4300000: TopSlice
+    4300002: Meat1
+    4300004: Meat2
+    4300006: Lettuce
+    4300008: BottomSlice
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: BottomSlice
+    13700002: Lettuce
+    13700004: Meat1
+    13700006: Meat2
+    13700008: TopSlice
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 18
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
