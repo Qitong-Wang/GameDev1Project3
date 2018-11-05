@@ -45,8 +45,10 @@ public class TextManager : MonoBehaviour
         }
         //Slider
         ProgressSlider.value = dataManager.cleanProgress;
-
-        //StatusText
+        if (second <= 0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
     public void UpdateSandwich()
     {

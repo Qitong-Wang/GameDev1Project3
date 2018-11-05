@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -103,6 +104,12 @@ public class Player : MonoBehaviour
         else
         {
             stuffText.text = "";
+        }
+
+        //End Game
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene(1);
         }
 
     }
