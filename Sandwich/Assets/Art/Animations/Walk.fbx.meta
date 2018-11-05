@@ -177,7 +177,7 @@ ModelImporter:
     4300004: Sandwich5_rigA2:Meat2
     4300006: Sandwich5_rigA2:Lettuce
     4300008: Sandwich5_rigA2:BottomSlice
-    7400000: Take 001
+    7400000: Walk
     9500000: //RootNode
     13700000: Sandwich5_rigA2:BottomSlice
     13700002: Sandwich5_rigA2:Lettuce
@@ -213,7 +213,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Walk
       takeName: Take 001
       firstFrame: 1
       lastFrame: 25
