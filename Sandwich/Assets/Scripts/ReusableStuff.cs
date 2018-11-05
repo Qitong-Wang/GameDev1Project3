@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Bedroom : Stuff
-{
+//Stuff such as sofa and TV that needs to make a clean one.
+public class ReusableStuff : Stuff
+{   
     public GameObject cleanObjectPrefab;
 
     public override void Finish()
     {
-        dataManager.goodEnding = true;
         Instantiate(cleanObjectPrefab, position, Quaternion.Euler(Vector3.zero));
         base.Finish();
         

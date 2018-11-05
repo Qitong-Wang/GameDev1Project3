@@ -7,15 +7,15 @@ public class Stuff : MonoBehaviour
 {
     public int maximumSandwiches; //The maximum of sandwiches who can work here
     public int workingSandwiches; //The number of sandwiches who are working here
-    public float maximumTime;
+    public float maximumTime; //Maximum time of clean a stuff
     public float currentTime = 0f; //The initial time to complete the whole work
     public GameObject sandwichPrefab; //Sandwich for instantiate
     public Vector3 releasePos;  //Position of releasing sandwiches
     public float releaseOffset; //Position of releasing sandwich offset
-    public float increaseProcess = 0.15f;
+    public float increaseProcess = 0.15f; //The increase of total process
 
     protected float timeCalculate = 0f; //Jump from 0 to 1
-    protected Image timeBar;
+    protected Image timeBar; //The time bar above the stuff
     protected GameObject DataManager;
     protected DataManager dataManager;
     protected GameObject TextManager;
@@ -24,7 +24,7 @@ public class Stuff : MonoBehaviour
     protected Text newsText;
     protected List<GameObject> sandwichWaitingList;//Sandwich selection list
     protected Vector3 position; //Position of this stuff
-    protected Transform smoke;
+    protected Transform smoke; //Smoke on the stuff
 
 
 
@@ -32,7 +32,7 @@ public class Stuff : MonoBehaviour
     void Start()
     {
         timeBar = transform.Find("StuffCanvas").Find("TimeBG").Find("Time").GetComponent<Image>();
-        smoke = transform.Find("Smoke");
+        smoke = transform.Find("smokeCloudPrefab");
         DataManager = GameObject.FindGameObjectWithTag("DataManager");
         dataManager = DataManager.GetComponent<DataManager>();
         TextManager = GameObject.FindGameObjectWithTag("TextManager");
