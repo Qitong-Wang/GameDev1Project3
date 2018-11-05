@@ -7,7 +7,8 @@ public class Bedroom : Stuff
 
     public override void Finish()
     {
-        base.Finish();
         dataManager.goodEnding = true;
+        base.Finish();
+        
     }
 }
