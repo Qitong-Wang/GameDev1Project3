@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4303964983790876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4605686488022670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4949970801640368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_arm_pole_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4484079869993396}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4547657583044566}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:upper_body_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4305694536429772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_hand_tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4858230405408390}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_wrist_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4475818725768706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:lower_body_root_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000226166504766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4623142371056666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4941817970797422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4951626991082218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_toe_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4380270929927886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4424852527978892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4125546490745232}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Sandwich_SKEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4801134950940440}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_ball_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4653445837366904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_leg_pole_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4497151100796612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056961849013262}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_toe_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4541329166756820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_wrist_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4722523239057800}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_ball_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4227683227484782}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4399282436494692}
   - component: {fileID: 137708806496302746}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Lettuce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4029217509105034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_heel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4157934683433896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_leg_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4305255677610382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4922682811629030}
   - component: {fileID: 137696897323481276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Meat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4963386069789194}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:spine_mid_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4502675984188452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_wrist_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4530909327190096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_foot_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4225094763571834}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_leg_pole_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4117616136345096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_toe_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4994012035338128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4246576412751296}
   - component: {fileID: 137760148600900180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Meat1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4626787533069118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:lower_body_root_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4023030202848512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:neck_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4677868694363184}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:neck_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4344113245936340}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4628472076130992}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:spine_mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4495143445804482}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_toe_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4027032705426942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:spine_mid_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4937406705428902}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_arm_IK_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4600335422133160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Sandwich_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4166138428321850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_arm_IK_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4188956582372492}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:Sandwich_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4697612081038102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:lower_body_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4558413451526686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_toe_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4288558293518770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:stick_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4883120615251830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_ball_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,7 +757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4005032567300338}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_toe_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4604425094552862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,7 +787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4671111467452054}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4320107634333126}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4894739178729750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4720769997909670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_heel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4247894404065018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4342863930214126}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_arm_pole_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4149717739742030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:stick_mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4171533465364698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_arm_pole_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4966676668607620}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_leg_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,7 +922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4775308387631152}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_ball_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4309180976055710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_foot_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -952,7 +952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4602096050346898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_hip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4785066723156714}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:spine_torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4719022387043078}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_arm_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4215110018407490}
   - component: {fileID: 137060925644239918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:TopSlice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,7 +1013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4204237358416112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4974926525913796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:main_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1043,7 +1043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4345806446205240}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_leg_pole_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1058,7 +1058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4527042279537360}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_arm_pole_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1073,7 +1073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4269974276874678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +1088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4514212972404426}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1104,10 +1104,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4803343317977874}
   - component: {fileID: 95701837230221942}
-  - component: {fileID: 64593432615546870}
-  m_Layer: 0
+  - component: {fileID: 54442678913890178}
+  - component: {fileID: 136526603725287848}
+  - component: {fileID: 195862984026641778}
+  - component: {fileID: 114690962286638998}
+  m_Layer: 10
   m_Name: SandwichModel
-  m_TagString: Untagged
+  m_TagString: Sandwich
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1121,7 +1124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4060128900471976}
   - component: {fileID: 137686834190818720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:BottomSlice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4812809772696198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_wrist_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4366203828415524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_hip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1166,7 +1169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4664487556036592}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_ball_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826330396094716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_foot_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,7 +1199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4887287546719490}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_leg_pole_CTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1211,7 +1214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4719616203762306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_foot_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4405139736675412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R__hand_tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070472380938734}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:R_rev_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4118961963726560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,7 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4428569450681448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sandwich5_rigA2:L_rev_ball_CTRL_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1291,7 +1294,7 @@ Transform:
   - {fileID: 4894739178729750}
   m_Father: {fileID: 4305255677610382}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.84482, y: -11.399207, z: -22.540932}
 --- !u!4 &4005032567300338
 Transform:
   m_ObjectHideFlags: 1
@@ -1347,7 +1350,7 @@ Transform:
   - {fileID: 4320107634333126}
   m_Father: {fileID: 4125546490745232}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0.64134216}
 --- !u!4 &4056961849013262
 Transform:
   m_ObjectHideFlags: 1
@@ -1361,7 +1364,7 @@ Transform:
   - {fileID: 4664487556036592}
   m_Father: {fileID: 4558413451526686}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.159888}
 --- !u!4 &4060128900471976
 Transform:
   m_ObjectHideFlags: 1
@@ -1389,7 +1392,7 @@ Transform:
   - {fileID: 4495143445804482}
   m_Father: {fileID: 4720769997909670}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.3758482, y: -179.11444, z: 169.09622}
 --- !u!4 &4117616136345096
 Transform:
   m_ObjectHideFlags: 1
@@ -1403,7 +1406,7 @@ Transform:
   - {fileID: 4428569450681448}
   m_Father: {fileID: 4005032567300338}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.036293283}
 --- !u!4 &4118961963726560
 Transform:
   m_ObjectHideFlags: 1
@@ -1417,7 +1420,7 @@ Transform:
   - {fileID: 4247894404065018}
   m_Father: {fileID: 4204237358416112}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.3272568, y: 27.957493, z: -2.818466}
 --- !u!4 &4125546490745232
 Transform:
   m_ObjectHideFlags: 1
@@ -1476,7 +1479,7 @@ Transform:
   - {fileID: 4719022387043078}
   m_Father: {fileID: 4125546490745232}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.3916765, y: 17.385868, z: 2.5724363}
 --- !u!4 &4171533465364698
 Transform:
   m_ObjectHideFlags: 1
@@ -1521,7 +1524,7 @@ Transform:
   - {fileID: 4118961963726560}
   m_Father: {fileID: 4785066723156714}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46.33364, y: 4.646535, z: 19.28388}
 --- !u!4 &4215110018407490
 Transform:
   m_ObjectHideFlags: 1
@@ -1562,7 +1565,7 @@ Transform:
   - {fileID: 4305255677610382}
   m_Father: {fileID: 4366203828415524}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.9590044, y: -4.3484325, z: 9.205946}
 --- !u!4 &4246576412751296
 Transform:
   m_ObjectHideFlags: 1
@@ -1589,7 +1592,7 @@ Transform:
   - {fileID: 4305694536429772}
   m_Father: {fileID: 4118961963726560}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -12.819562, y: -0.07855329, z: -0.017357755}
 --- !u!4 &4269974276874678
 Transform:
   m_ObjectHideFlags: 1
@@ -1603,7 +1606,7 @@ Transform:
   - {fileID: 4605686488022670}
   m_Father: {fileID: 4671111467452054}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -80.75568, y: -164.19023, z: 82.06315}
 --- !u!4 &4288558293518770
 Transform:
   m_ObjectHideFlags: 1
@@ -1631,7 +1634,7 @@ Transform:
   - {fileID: 4484079869993396}
   m_Father: {fileID: 4320107634333126}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.48988965, y: 1.308717, z: -28.85242}
 --- !u!4 &4305255677610382
 Transform:
   m_ObjectHideFlags: 1
@@ -1645,7 +1648,7 @@ Transform:
   - {fileID: 4000226166504766}
   m_Father: {fileID: 4227683227484782}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -43.31065, y: -177.67114, z: 97.870544}
 --- !u!4 &4305694536429772
 Transform:
   m_ObjectHideFlags: 1
@@ -1658,7 +1661,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4247894404065018}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.6533796}
 --- !u!4 &4309180976055710
 Transform:
   m_ObjectHideFlags: 1
@@ -1687,7 +1690,7 @@ Transform:
   - {fileID: 4951626991082218}
   m_Father: {fileID: 4029217509105034}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.56475633, y: 174.24513, z: -5.585978}
 --- !u!4 &4342863930214126
 Transform:
   m_ObjectHideFlags: 1
@@ -1741,7 +1744,7 @@ Transform:
   - {fileID: 4227683227484782}
   m_Father: {fileID: 4697612081038102}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.492313, y: 119.63954, z: -103.05863}
 --- !u!4 &4380270929927886
 Transform:
   m_ObjectHideFlags: 1
@@ -1756,7 +1759,7 @@ Transform:
   - {fileID: 4547657583044566}
   m_Father: {fileID: 4125546490745232}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.753912, y: -86.05266, z: -73.58311}
 --- !u!4 &4399282436494692
 Transform:
   m_ObjectHideFlags: 1
@@ -1782,7 +1785,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4497151100796612}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.3464}
 --- !u!4 &4424852527978892
 Transform:
   m_ObjectHideFlags: 1
@@ -1796,7 +1799,7 @@ Transform:
   - {fileID: 4149717739742030}
   m_Father: {fileID: 4785066723156714}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.3268749e-12, y: -6.381751e-12, z: -78.253845}
 --- !u!4 &4428569450681448
 Transform:
   m_ObjectHideFlags: 1
@@ -1824,7 +1827,7 @@ Transform:
   - {fileID: 4027032705426942}
   m_Father: {fileID: 4626787533069118}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.367099, y: -1.1529303, z: 7.874613}
 --- !u!4 &4484079869993396
 Transform:
   m_ObjectHideFlags: 1
@@ -1892,7 +1895,7 @@ Transform:
   - {fileID: 4497151100796612}
   m_Father: {fileID: 4604425094552862}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.2420814, y: -30.256357, z: -2.4317338}
 --- !u!4 &4527042279537360
 Transform:
   m_ObjectHideFlags: 1
@@ -1920,7 +1923,7 @@ Transform:
   - {fileID: 4558413451526686}
   m_Father: {fileID: 4719616203762306}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -12.446523, y: 7.4126287, z: 8.374707}
 --- !u!4 &4541329166756820
 Transform:
   m_ObjectHideFlags: 1
@@ -1989,7 +1992,7 @@ Transform:
   - {fileID: 4671111467452054}
   m_Father: {fileID: 4697612081038102}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.087357, y: -174.40482, z: 98.693855}
 --- !u!4 &4604425094552862
 Transform:
   m_ObjectHideFlags: 1
@@ -2003,7 +2006,7 @@ Transform:
   - {fileID: 4514212972404426}
   m_Father: {fileID: 4785066723156714}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -56.25698, y: 165.29842, z: 27.498173}
 --- !u!4 &4605686488022670
 Transform:
   m_ObjectHideFlags: 1
@@ -2017,7 +2020,7 @@ Transform:
   - {fileID: 4623142371056666}
   m_Father: {fileID: 4269974276874678}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.15586382, y: -1.1207094, z: -11.887096}
 --- !u!4 &4623142371056666
 Transform:
   m_ObjectHideFlags: 1
@@ -2030,7 +2033,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4605686488022670}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.2679486, y: -90, z: -90}
 --- !u!4 &4626787533069118
 Transform:
   m_ObjectHideFlags: 1
@@ -2058,7 +2061,7 @@ Transform:
   - {fileID: 4785066723156714}
   m_Father: {fileID: 4547657583044566}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -11.989048, y: 7.122832, z: -15.985909}
 --- !u!4 &4653445837366904
 Transform:
   m_ObjectHideFlags: 1
@@ -2100,7 +2103,7 @@ Transform:
   - {fileID: 4269974276874678}
   m_Father: {fileID: 4602096050346898}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.26922786, y: 14.596849, z: -1.3261501}
 --- !u!4 &4677868694363184
 Transform:
   m_ObjectHideFlags: 1
@@ -2169,7 +2172,7 @@ Transform:
   - {fileID: 4070472380938734}
   m_Father: {fileID: 4125546490745232}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.55889183, y: 89.90547, z: -179.53822}
 --- !u!4 &4722523239057800
 Transform:
   m_ObjectHideFlags: 1
@@ -2195,7 +2198,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4428569450681448}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.589447, y: 0, z: 0}
 --- !u!4 &4785066723156714
 Transform:
   m_ObjectHideFlags: 1
@@ -2224,7 +2227,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4664487556036592}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.8916186, y: 0, z: 0}
 --- !u!4 &4803343317977874
 Transform:
   m_ObjectHideFlags: 1
@@ -2232,7 +2235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1833660293032072}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.90123844, y: 0.03754815, z: -4.264443}
+  m_LocalPosition: {x: 7.39, y: 0.043, z: 0.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4600335422133160}
@@ -2268,7 +2271,7 @@ Transform:
   - {fileID: 4005032567300338}
   m_Father: {fileID: 4309180976055710}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.00026626885, y: 0.12966442, z: 0.11755657}
 --- !u!4 &4858230405408390
 Transform:
   m_ObjectHideFlags: 1
@@ -2321,7 +2324,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000226166504766}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.2679486, y: -90, z: -90}
 --- !u!4 &4922682811629030
 Transform:
   m_ObjectHideFlags: 1
@@ -2348,7 +2351,7 @@ Transform:
   - {fileID: 4941817970797422}
   m_Father: {fileID: 4125546490745232}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.3916765, y: 17.385868, z: 2.5724363}
 --- !u!4 &4941817970797422
 Transform:
   m_ObjectHideFlags: 1
@@ -2406,7 +2409,7 @@ Transform:
   - {fileID: 4812809772696198}
   m_Father: {fileID: 4027032705426942}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.882957, y: -1.9322035, z: -9.520466}
 --- !u!4 &4966676668607620
 Transform:
   m_ObjectHideFlags: 1
@@ -2452,21 +2455,22 @@ Transform:
   - {fileID: 4344113245936340}
   m_Father: {fileID: 4070472380938734}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &64593432615546870
-MeshCollider:
+  m_LocalEulerAnglesHint: {x: -0.53676355, y: 5.458447, z: 156.96925}
+--- !u!54 &54442678913890178
+Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1833660293032072}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &95701837230221942
 Animator:
   serializedVersion: 3
@@ -2485,6 +2489,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114690962286638998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833660293032072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb77b2c9a35e82499e250a666232895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goal: {x: 0, y: 0, z: 0}
+  agent: {fileID: 0}
+  navigating: 0
+  goalObject: {fileID: 0}
+--- !u!136 &136526603725287848
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833660293032072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.123319
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.56165946, z: 0}
 --- !u!137 &137060925644239918
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2500,7 +2532,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b02a8d3e8f6d2874f8ded2e6c539f682, type: 3}
+  - {fileID: 2100000, guid: 3c01a87ae47fae54b8c238bea1a59570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2573,7 +2605,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b02a8d3e8f6d2874f8ded2e6c539f682, type: 3}
+  - {fileID: 2100000, guid: 3c01a87ae47fae54b8c238bea1a59570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2646,7 +2678,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b02a8d3e8f6d2874f8ded2e6c539f682, type: 3}
+  - {fileID: 2100000, guid: 3c01a87ae47fae54b8c238bea1a59570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2719,7 +2751,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b02a8d3e8f6d2874f8ded2e6c539f682, type: 3}
+  - {fileID: 2100000, guid: 3c01a87ae47fae54b8c238bea1a59570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2792,7 +2824,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b02a8d3e8f6d2874f8ded2e6c539f682, type: 3}
+  - {fileID: 2100000, guid: 3c01a87ae47fae54b8c238bea1a59570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2850,3 +2882,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.12093096, y: 0.01949367, z: -0.048883274}
     m_Extent: {x: 0.17196333, y: 0.3533907, z: 0.32203472}
   m_DirtyAABB: 0
+--- !u!195 &195862984026641778
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833660293032072}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.09869838
+  m_Speed: 2
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.3843363
+  m_BaseOffset: 0.19216815
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

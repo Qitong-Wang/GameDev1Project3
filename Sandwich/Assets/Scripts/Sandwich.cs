@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
 
 
 public class Sandwich : MonoBehaviour
@@ -14,6 +15,7 @@ public class Sandwich : MonoBehaviour
     DataManager dataManager;
     GameObject TextManager;
     TextManager textManager;
+    Animator anim;
 
     // Use this for initialization
     void Start()
@@ -25,6 +27,7 @@ public class Sandwich : MonoBehaviour
         dataManager = DataManager.GetComponent<DataManager>();
         TextManager = GameObject.FindGameObjectWithTag("TextManager");
         textManager = TextManager.GetComponent<TextManager>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class Sandwich : MonoBehaviour
     {
         agent.destination = dest;
         agent.isStopped = false;
+        anim.SetBool("Walking", true);
     }
     public void SelectSandwich()
     { //Player right click the mouse and select the sandwich
@@ -47,6 +51,7 @@ public class Sandwich : MonoBehaviour
             goalObject = null;
             goal = new Vector3();
             dataManager.sandwichIdle += 1;
+            
         }
         if (!dataManager.sandwichWaitingList.Contains(gameObject))
         {
@@ -77,5 +82,6 @@ public class Sandwich : MonoBehaviour
     public void stopMoving()
     {
         agent.isStopped = true;
+        anim.SetBool("Walking", false);
     }
 }
