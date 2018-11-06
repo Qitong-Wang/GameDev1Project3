@@ -55,12 +55,12 @@ public class Kitchen : Stuff
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by {1} sandwiches"
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} is cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by {1} sandwiches"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress

@@ -39,7 +39,7 @@ public class TextManager : MonoBehaviour
         if (totalTime >= 1)
         {
             second--;
-            timeText.text = string.Format("Time Remaining: {0:00}:{1:00}\nWorking Progress:  {2:00}%", ((int)second / 60), second % 60, ((int)(dataManager.cleanProgress * 100)));
+            timeText.text = string.Format("Time Remaining: {0:00}:{1:00}\nWork Progress:  {2:00}%", ((int)second / 60), second % 60, ((int)(dataManager.cleanProgress * 100)));
             totalTime = 0;
 
         }
@@ -52,7 +52,7 @@ public class TextManager : MonoBehaviour
     }
     public void UpdateSandwich()
     {
-        statusText.text = string.Format("Working Sandwiches: {0}/{1}\nIdle Sandwiches:       {2}/{1}\nHolding Sandwiches:  {3}/{1}"
+        statusText.text = string.Format("Working Sandwiches: {0}/{1}\nIdle Sandwiches:       {2}/{1}\nHeld Sandwiches:  {3}/{1}"
            , dataManager.sandwichWorking, dataManager.sandwichTotal, dataManager.sandwichIdle, dataManager.sandwichHolding);
 
     }
