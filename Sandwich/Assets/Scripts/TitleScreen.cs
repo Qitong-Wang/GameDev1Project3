@@ -39,10 +39,19 @@ public class TitleScreen : MonoBehaviour {
     }
     private void Update()
     {
-        if (bgFading) {
-            bgFadePercent += Time.deltaTime*50;
-            image1.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255,255f - bgFadePercent);
-            print(bgFadePercent);
+        if (image1 != null)
+        {
+            if (bgFading)
+            {
+                bgFadePercent += Time.deltaTime;
+                image1.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f - bgFadePercent);
+
+
+            }
+            if (bgFadePercent > 255)
+            {
+                Destroy(image1.gameObject);
+            }
         }
         if (currentPanel > 0)
         {

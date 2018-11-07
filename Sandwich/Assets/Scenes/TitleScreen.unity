@@ -991,6 +991,8 @@ MonoBehaviour:
   button3: {fileID: 159437441}
   button4: {fileID: 86420576}
   image1: {fileID: 946701418}
+  bgFading: 0
+  bgFadePercent: 0
 --- !u!212 &1047260693
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1026,7 +1028,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 09a6f382871792645a1901d7ced539ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7939f43c48a8dd843aa39f511f593e98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
