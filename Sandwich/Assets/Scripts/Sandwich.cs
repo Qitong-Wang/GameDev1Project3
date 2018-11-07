@@ -61,7 +61,7 @@ public class Sandwich : MonoBehaviour
         textManager.UpdateSandwich();
     }
     //Deselect Sandwich when the sandwich is idling
-    public void DeselectSandwich()
+    public bool DeselectSandwich()
     {
         if (goalObject == null)
         {
@@ -71,12 +71,13 @@ public class Sandwich : MonoBehaviour
                 {
                     dataManager.sandwichWaitingList.RemoveAt(i);
                     dataManager.sandwichHolding -= 1;
-                    break;
-                   
+                    textManager.UpdateSandwich();
+                    return true;                  
                 }
             }
         }
-        textManager.UpdateSandwich();
+    
+        return false;
     }
 
     public void stopMoving()

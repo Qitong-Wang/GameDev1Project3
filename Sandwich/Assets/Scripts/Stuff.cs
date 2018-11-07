@@ -13,6 +13,7 @@ public class Stuff : MonoBehaviour
     public Vector3 releasePos;  //Position of releasing sandwiches
     public float releaseOffset; //Position of releasing sandwich offset
     public float increaseProcess = 0.15f; //The increase of total process
+    
 
     protected float timeCalculate = 0f; //Jump from 0 to 1
     protected Image timeBar; //The time bar above the stuff

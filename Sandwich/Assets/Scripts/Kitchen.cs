@@ -80,7 +80,7 @@ public class Kitchen : Stuff
             InstantiateSandwich();
             dataManager.sandwichWorking -= 1;
             dataManager.sandwichIdle += 1;
-            dataManager.sandwichTotal += 1;
+            
         }
         workingSandwiches = 0;
         //Is able to produce new sandwich
@@ -97,6 +97,7 @@ public class Kitchen : Stuff
     {
         newsText.text = string.Format("{0} produced 1 new sandwich", gameObject.name);
         dataManager.sandwichIdle += 1;
+        dataManager.sandwichTotal += 1;
         dataManager.sandwichTotal += 1;
         InstantiateSandwich();
         textManager.UpdateSandwich();
