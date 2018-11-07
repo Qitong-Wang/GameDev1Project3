@@ -80,6 +80,7 @@ public class Kitchen : Stuff
             InstantiateSandwich();
             dataManager.sandwichWorking -= 1;
             dataManager.sandwichIdle += 1;
+            dataManager.sandwichTotal += 1;
         }
         workingSandwiches = 0;
         //Is able to produce new sandwich

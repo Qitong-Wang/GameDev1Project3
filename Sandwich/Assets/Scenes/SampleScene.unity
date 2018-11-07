@@ -295,8 +295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cleanProgress: 0
-  sandwichTotal: 6
-  sandwichIdle: 6
+  sandwichTotal: 1
+  sandwichIdle: 1
   sandwichHolding: 0
   sandwichWorking: 0
   cleanConstant: 1
