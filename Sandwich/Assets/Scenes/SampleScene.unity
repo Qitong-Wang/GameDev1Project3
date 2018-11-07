@@ -2103,6 +2103,16 @@ Prefab:
       propertyPath: m_Name
       value: Smelly Socks
       objectReference: {fileID: 0}
+    - target: {fileID: 64743391420548732, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64621457506575874, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f5d290ea365f47998e03a42179bfd, type: 2}
   m_IsPrefabAsset: 0
@@ -4417,6 +4427,16 @@ Prefab:
     - target: {fileID: 1354939489935490, guid: 107f5d290ea365f47998e03a42179bfd, type: 2}
       propertyPath: m_Name
       value: Crusty Socks
+      objectReference: {fileID: 0}
+    - target: {fileID: 64743391420548732, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64621457506575874, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f5d290ea365f47998e03a42179bfd, type: 2}
@@ -7633,6 +7653,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1122694662235530, guid: c5d6523c6bb1d9d429b37670f87b2648, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64491633696994236, guid: c5d6523c6bb1d9d429b37670f87b2648,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
