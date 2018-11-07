@@ -23,15 +23,15 @@ public class Player : MonoBehaviour
     public AudioClip clipSweep4;
     public AudioClip clipRandom1;
     public AudioClip clipRandom2;
-    AudioSource audio;
+    AudioSource audioPlay;
     public GameObject DataManager;
     DataManager dataManager;
 
     // Use this for initialization
     void Start()
     {
-        
-        audio = GetComponent<AudioSource>();
+
+        audioPlay = GetComponent<AudioSource>();
         raycast = raycastObject.GetComponent<Raycast>();
         _characterController = GetComponent<CharacterController>();
         stuffText = StuffText.GetComponent<Text>();
@@ -92,21 +92,21 @@ public class Player : MonoBehaviour
                         int randomSound = Random.Range(1, 5);
                         if (randomSound == 1)
                         {
-                            audio.clip = clipSweep1;
+                            audioPlay.clip = clipSweep1;
                         }
                         else if (randomSound == 2)
                         {
-                            audio.clip = clipSweep2;
+                            audioPlay.clip = clipSweep2;
                         }
                         else if (randomSound == 2)
                         {
-                            audio.clip = clipSweep3;
+                            audioPlay.clip = clipSweep3;
                         }
                         else
                         {
-                            audio.clip = clipSweep4;
+                            audioPlay.clip = clipSweep4;
                         }
-                        audio.Play();
+                        audioPlay.Play();
                     }
                     s.OrderSandwich();
                 }
@@ -118,13 +118,13 @@ public class Player : MonoBehaviour
                         int randomSound = Random.Range(1, 3);
                         if (randomSound == 1)
                         {
-                            audio.clip = clipRandom1;
+                            audioPlay.clip = clipRandom1;
                         }
                         else
                         {
-                            audio.clip = clipRandom2;
+                            audioPlay.clip = clipRandom2;
                         }
-                        audio.Play();
+                        audioPlay.Play();
                     }
                     s.CancelWork();
 
@@ -142,13 +142,13 @@ public class Player : MonoBehaviour
                     int randomSound = Random.Range(1, 3);
                     if (randomSound == 1)
                     {
-                        audio.clip = clipYep1;
+                        audioPlay.clip = clipYep1;
                     }
                     else
                     {
-                        audio.clip = clipYep2;
+                        audioPlay.clip = clipYep2;
                     }
-                    audio.Play();
+                    audioPlay.Play();
                     s.SelectSandwich();
 
                 }
@@ -161,13 +161,13 @@ public class Player : MonoBehaviour
                         int randomSound = Random.Range(1, 3);
                         if (randomSound == 1)
                         {
-                            audio.clip = clipRandom1;
+                            audioPlay.clip = clipRandom1;
                         }
                         else
                         {
-                            audio.clip = clipRandom2;
+                            audioPlay.clip = clipRandom2;
                         }
-                        audio.Play();
+                        audioPlay.Play();
                     }
                 }
 
