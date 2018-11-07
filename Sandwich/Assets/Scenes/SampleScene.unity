@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -594,6 +594,11 @@ Prefab:
     - target: {fileID: 1192936684885542, guid: 29ebc274314bba7409896af3697d1ac8, type: 2}
       propertyPath: m_Name
       value: Wine Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206515431950668, guid: 29ebc274314bba7409896af3697d1ac8,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ebc274314bba7409896af3697d1ac8, type: 2}
@@ -1561,12 +1566,12 @@ Prefab:
     - target: {fileID: 114895753194361566, guid: eddf6e61f82fda84aa69c71a6adc1877,
         type: 2}
       propertyPath: releasePos.x
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114895753194361566, guid: eddf6e61f82fda84aa69c71a6adc1877,
         type: 2}
       propertyPath: releasePos.z
-      value: 1.51
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 114895753194361566, guid: eddf6e61f82fda84aa69c71a6adc1877,
         type: 2}
@@ -2112,6 +2117,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114742963098927196, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.025
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f5d290ea365f47998e03a42179bfd, type: 2}
@@ -3843,6 +3853,11 @@ Prefab:
       propertyPath: m_Name
       value: Old Soda Cans
       objectReference: {fileID: 0}
+    - target: {fileID: 114730673688149576, guid: ec14bfe3c7546b943b127b4e074af5cd,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec14bfe3c7546b943b127b4e074af5cd, type: 2}
   m_IsPrefabAsset: 0
@@ -4437,6 +4452,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114742963098927196, guid: 107f5d290ea365f47998e03a42179bfd,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107f5d290ea365f47998e03a42179bfd, type: 2}
@@ -5474,7 +5494,7 @@ MonoBehaviour:
     type: 2}
   releasePos: {x: -2.24, y: 0, z: -8.5}
   releaseOffset: 1.5
-  increaseProcess: 0.15
+  increaseProcess: 0.05
   workingTime: 35
   clean: 0
   cleanMaterial: {fileID: 2100000, guid: 491407c80403b3c46b7f276134c53dfd, type: 2}
@@ -5819,6 +5839,11 @@ Prefab:
       propertyPath: releasePos.y
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114954510998207052, guid: 873dec15b42713547a14ce667b59349e,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873dec15b42713547a14ce667b59349e, type: 2}
   m_IsPrefabAsset: 0
@@ -5909,6 +5934,11 @@ Prefab:
         type: 2}
       propertyPath: maximumSandwiches
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954510998207052, guid: 873dec15b42713547a14ce667b59349e,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873dec15b42713547a14ce667b59349e, type: 2}
@@ -6227,6 +6257,11 @@ Prefab:
       propertyPath: releasePos.z
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 114206515431950668, guid: 29ebc274314bba7409896af3697d1ac8,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ebc274314bba7409896af3697d1ac8, type: 2}
   m_IsPrefabAsset: 0
@@ -6305,7 +6340,7 @@ MonoBehaviour:
     type: 2}
   releasePos: {x: -1.88, y: 0, z: 9.02}
   releaseOffset: 1.5
-  increaseProcess: 0.15
+  increaseProcess: 0.05
   cleanObjectPrefab: {fileID: 1959976796202014, guid: 7ef206c2a327de64e953009a8b14b575,
     type: 2}
 --- !u!136 &1322445035
@@ -6438,6 +6473,11 @@ Prefab:
         type: 2}
       propertyPath: maximumTime
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114895753194361566, guid: eddf6e61f82fda84aa69c71a6adc1877,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eddf6e61f82fda84aa69c71a6adc1877, type: 2}
@@ -7150,7 +7190,7 @@ MonoBehaviour:
     type: 2}
   releasePos: {x: 11.07, y: 0, z: 4.31}
   releaseOffset: 1.5
-  increaseProcess: 0.15
+  increaseProcess: 0.05
   cleanObjectPrefab: {fileID: 1959976796202014, guid: 7ef206c2a327de64e953009a8b14b575,
     type: 2}
   cleanConstant: 1.5
@@ -7503,7 +7543,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9000,6 +9040,11 @@ Prefab:
     - target: {fileID: 1430058307263670, guid: b82d5084516f71a439ed483008a8341d, type: 2}
       propertyPath: m_Name
       value: Smelly Trashbag
+      objectReference: {fileID: 0}
+    - target: {fileID: 114399444811313522, guid: b82d5084516f71a439ed483008a8341d,
+        type: 2}
+      propertyPath: increaseProcess
+      value: 0.075
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82d5084516f71a439ed483008a8341d, type: 2}
