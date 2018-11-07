@@ -487,6 +487,15 @@ MonoBehaviour:
   sandwichTotal: 0
   goodEnding: 0
   frontDoorOpen: 0
+  good:
+  - {fileID: 2111551627}
+  - {fileID: 1309974436}
+  bad:
+  - {fileID: 292632473}
+  - {fileID: 191373356}
+  neutral:
+  - {fileID: 1010635165}
+  - {fileID: 1024260952}
 --- !u!1 &1010635165
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1024260953
 Transform:
   m_ObjectHideFlags: 0

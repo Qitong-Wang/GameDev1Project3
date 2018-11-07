@@ -8,6 +8,12 @@ public class EndingSceneManager : MonoBehaviour {
     public bool goodEnding;
     public bool frontDoorOpen;
     DataManager dataManager;
+
+    [Header("Images/Text")]
+    public GameObject[] good;
+    public GameObject[] bad;
+    public GameObject[] neutral;
+
     
     void Start () {
         dataManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DataManager>();
@@ -22,5 +28,27 @@ public class EndingSceneManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         print(frontDoorOpen);
-	}
+
+
+        if (goodEnding)
+        {
+            UnlockAll(good);
+        }
+        else if(frontDoorOpen)
+        {
+            UnlockAll(neutral);
+        }
+        else
+        {
+            UnlockAll(bad);
+        }
+    }
+
+    void UnlockAll(GameObject[] g)
+    {
+        foreach(GameObject item in g)
+        {
+            item.SetActive(true);
+        }
+    }
 }
