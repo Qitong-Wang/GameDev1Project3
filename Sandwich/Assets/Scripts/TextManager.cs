@@ -28,6 +28,9 @@ public class TextManager : MonoBehaviour
         statusText = StatusText.GetComponent<Text>();
         this.UpdateSandwich();
 
+        timeText.text = string.Format("Time Remaining: {0:00}:{1:00}\nWork Progress:  {2:00}%", ((int)second / 60), second % 60, ((int)(dataManager.cleanProgress * 100)));
+
+
     }
 
     // Update is called once per frame

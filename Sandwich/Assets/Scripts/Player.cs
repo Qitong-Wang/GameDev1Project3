@@ -10,15 +10,32 @@ public class Player : MonoBehaviour
     private CharacterController _characterController;
     public float gravity = -9.8f;
     public GameObject raycastObject;
-    public Raycast raycast;
+    public Raycast raycast; //Raycast
+    //Text
     public GameObject StuffText;
     Text stuffText;
+    //Sound
+    public AudioClip clipYep1;
+    public AudioClip clipYep2;
+    public AudioClip clipSweep1;
+    public AudioClip clipSweep2;
+    public AudioClip clipSweep3;
+    public AudioClip clipSweep4;
+    public AudioClip clipRandom1;
+    public AudioClip clipRandom2;
+    AudioSource audio;
+    public GameObject DataManager;
+    DataManager dataManager;
+
     // Use this for initialization
     void Start()
     {
+        
+        audio = GetComponent<AudioSource>();
         raycast = raycastObject.GetComponent<Raycast>();
         _characterController = GetComponent<CharacterController>();
         stuffText = StuffText.GetComponent<Text>();
+        dataManager = DataManager.GetComponent<DataManager>();
     }
 
     // Update is called once per frame
@@ -67,32 +84,91 @@ public class Player : MonoBehaviour
                                         , raycast.objectTouch.name, s.workingSandwiches, s.maximumSandwiches, s.currentTime, s.maximumTime);
                 }
 
-                //Click right button of Mouse. Set the goal of sandwiches
+                //Click left button of Mouse. Set the goal of sandwiches
                 if (Input.GetMouseButtonDown(0))
                 {
+                    if (dataManager.sandwichHolding > 0)
+                    {
+                        int randomSound = Random.Range(1, 5);
+                        if (randomSound == 1)
+                        {
+                            audio.clip = clipSweep1;
+                        }
+                        else if (randomSound == 2)
+                        {
+                            audio.clip = clipSweep2;
+                        }
+                        else if (randomSound == 2)
+                        {
+                            audio.clip = clipSweep3;
+                        }
+                        else
+                        {
+                            audio.clip = clipSweep4;
+                        }
+                        audio.Play();
+                    }
                     s.OrderSandwich();
                 }
-                //Click left button of Mouse. Cancel a work.
+                //Click right button of Mouse. Cancel a work.
                 else if (Input.GetMouseButtonDown(1))
                 {
+                    if (s.workingSandwiches >0)
+                    {
+                        int randomSound = Random.Range(1, 3);
+                        if (randomSound == 1)
+                        {
+                            audio.clip = clipRandom1;
+                        }
+                        else
+                        {
+                            audio.clip = clipRandom2;
+                        }
+                        audio.Play();
+                    }
                     s.CancelWork();
 
                 }
             }
             else if (raycast.objectTouch.tag == "Sandwich")//The raycast touch a sandwich
             {
+                
+                
                 Sandwich s = raycast.objectTouch.GetComponent<Sandwich>();
                 stuffText.text = string.Format("An Idle Sandwich");
                 //Click left button of Mouse. Select a sandwich
                 if (Input.GetMouseButtonDown(0))
                 {
+                    int randomSound = Random.Range(1, 3);
+                    if (randomSound == 1)
+                    {
+                        audio.clip = clipYep1;
+                    }
+                    else
+                    {
+                        audio.clip = clipYep2;
+                    }
+                    audio.Play();
                     s.SelectSandwich();
 
                 }
                 //Click right button of Mouse. Deselect a sandwich
                 else if (Input.GetMouseButtonDown(1))
                 {
-                    s.DeselectSandwich();
+                    
+                    if (s.DeselectSandwich())
+                    {
+                        int randomSound = Random.Range(1, 3);
+                        if (randomSound == 1)
+                        {
+                            audio.clip = clipRandom1;
+                        }
+                        else
+                        {
+                            audio.clip = clipRandom2;
+                        }
+                        audio.Play();
+                    }
                 }
 
             }
