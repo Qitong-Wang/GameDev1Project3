@@ -45,12 +45,11 @@ public class Sandwich : MonoBehaviour
     { //Player right click the mouse and select the sandwich
         if (goalObject != null)//Needs to cancel the the traveling of sandwich
         {
-            stopMoving();
+            
             Stuff s = goalObject.GetComponent<Stuff>();
             s.CancelSandwich(gameObject);
-            goalObject = null;
+            stopMoving();
             goal = new Vector3();
-            dataManager.sandwichIdle += 1;
             
         }
         if (!dataManager.sandwichWaitingList.Contains(gameObject))
@@ -83,6 +82,7 @@ public class Sandwich : MonoBehaviour
     public void stopMoving()
     {
         goalObject = null;
+        dataManager.sandwichIdle += 1;
         agent.isStopped = true;
         anim.SetBool("Walking", false);
         

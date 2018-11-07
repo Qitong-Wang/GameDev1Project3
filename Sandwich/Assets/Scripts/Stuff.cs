@@ -122,7 +122,7 @@ public class Stuff : MonoBehaviour
         {
             Sandwich s = sandwich.GetComponent<Sandwich>();
             s.stopMoving();
-            dataManager.sandwichIdle += 1;
+           
         }
        
         textManager.UpdateSandwich();
