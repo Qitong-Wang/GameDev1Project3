@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Washroom : Stuff
 {
-
+    public GameObject cleanObjectPrefab;
     public float cleanConstant = 1.5f;
+
     public override void Finish()
     {
         dataManager.cleanConstant = this.cleanConstant;
-        base.Finish(); 
+        Instantiate(cleanObjectPrefab, position, Quaternion.Euler(Vector3.zero));
+        base.Finish();
+        newsText.text += "\nNow sandwiches clean faster!";
     }
 }
