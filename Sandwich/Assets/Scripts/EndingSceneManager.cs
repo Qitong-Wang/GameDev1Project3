@@ -16,7 +16,8 @@ public class EndingSceneManager : MonoBehaviour {
 
     
     void Start () {
-        dataManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DataManager>();
+        dataManager = FindObjectOfType<DataManager>();
+        Cursor.lockState = CursorLockMode.None;
         cleanProgress = dataManager.cleanProgress;
         sandwichTotal = dataManager.sandwichTotal;
         goodEnding = dataManager.goodEnding;
