@@ -52,7 +52,7 @@ public class TextManager : MonoBehaviour
     }
     public void UpdateSandwich()
     {
-        statusText.text = string.Format("Working Sandwiches: {0}/{1}\nIdle Sandwiches:       {2}/{1}\nHeld Sandwiches:  {3}/{1}"
+        statusText.text = string.Format("Working Sandwiches: {0}/{1}\nIdle Sandwiches:      {2}/{1}\nHeld Sandwiches:     {3}/{1}"
            , dataManager.sandwichWorking, dataManager.sandwichTotal, dataManager.sandwichIdle, dataManager.sandwichHolding);
 
     }
