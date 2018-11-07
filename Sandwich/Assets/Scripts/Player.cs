@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
         //End Game
         if (Input.GetKeyDown(KeyCode.T))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("EndingScene");
         }
 
     }

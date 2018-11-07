@@ -34,7 +34,7 @@ public class TitleScreen : MonoBehaviour {
             lerpPercent = 0;
         }
         else {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("SampleScene");
         }
     }
     private void Update()
@@ -61,7 +61,7 @@ public class TitleScreen : MonoBehaviour {
         }
     }
     public void TitleFastStart() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SampleScene");
     }
     public void TitleExitGame() {
         Application.Quit();

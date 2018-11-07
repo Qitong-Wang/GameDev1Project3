@@ -50,7 +50,7 @@ public class TextManager : MonoBehaviour
         ProgressSlider.value = dataManager.cleanProgress;
         if (second <= 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("EndingScene");
         }
     }
     public void UpdateSandwich()
