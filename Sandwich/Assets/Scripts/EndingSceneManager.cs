@@ -28,16 +28,20 @@ public class EndingSceneManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         print(frontDoorOpen);
+        
 
-
-        if (goodEnding)
+        if (frontDoorOpen)
         {
-            UnlockAll(good);
+            if (goodEnding)
+            {
+                UnlockAll(good);
+            }
+            else
+            {
+                UnlockAll(neutral);
+            }
         }
-        else if(frontDoorOpen)
-        {
-            UnlockAll(neutral);
-        }
+  
         else
         {
             UnlockAll(bad);
