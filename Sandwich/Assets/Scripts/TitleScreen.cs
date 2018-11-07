@@ -5,19 +5,21 @@ using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour {
     public int currentPanel;
     public List<Vector3> panels;
-    public Sprite bg;
     public Sprite comic;
     public GameObject cam;
     float lerpPercent;
     public GameObject button1, button2,button3, button4;
+    public GameObject image1;
+    public bool bgFading = false;
+    public float bgFadePercent = 0;
     private void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = bg;
     }
 
     public void TitleSlowStart() {
         if (button2 != null)
         {
+            bgFading = true;
             Destroy(button2);
             Destroy(button3);
             GetComponent<SpriteRenderer>().sprite = comic;
@@ -37,6 +39,11 @@ public class TitleScreen : MonoBehaviour {
     }
     private void Update()
     {
+        if (bgFading) {
+            bgFadePercent += Time.deltaTime*50;
+            image1.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255,255f - bgFadePercent);
+            print(bgFadePercent);
+        }
         if (currentPanel > 0)
         {
             lerpPercent += Time.deltaTime;
