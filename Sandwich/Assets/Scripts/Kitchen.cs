@@ -62,7 +62,7 @@ public class Kitchen : Stuff
         }
         else
         {
-            newsText.text = string.Format("{0} was cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by {1} sandwich"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
