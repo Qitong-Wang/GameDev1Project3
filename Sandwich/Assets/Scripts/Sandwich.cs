@@ -82,7 +82,9 @@ public class Sandwich : MonoBehaviour
 
     public void stopMoving()
     {
+        goalObject = null;
         agent.isStopped = true;
         anim.SetBool("Walking", false);
+        
     }
 }
