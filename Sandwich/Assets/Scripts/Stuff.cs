@@ -155,7 +155,6 @@ public class Stuff : MonoBehaviour
             {
                 Sandwich sandwich = g.GetComponent<Sandwich>();
                 sandwich.stopMoving();
-                dataManager.sandwichIdle += 1;
             }
             this.sandwichWaitingList.Clear();
 
