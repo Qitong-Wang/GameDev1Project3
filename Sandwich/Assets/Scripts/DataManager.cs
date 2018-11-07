@@ -12,19 +12,30 @@ public class DataManager : MonoBehaviour
     public float cleanConstant = 1f; //Constant that a sandwich's working efficient
     public bool goodEnding = false;
     public bool frontDoorOpen = false;
-    public List<GameObject> sandwichWaitingList;//Sandwich selection list
+    public List<GameObject> sandwichWaitingList = new List<GameObject>();//Sandwich selection list
 
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+    }
     // Use this for initialization
     void Start()
     {
-        sandwichWaitingList = new List<GameObject>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        print(frontDoorOpen);
+    }
+    public void DestoryThisObject()
+    {
+        Destroy(gameObject);
     }
 
 
