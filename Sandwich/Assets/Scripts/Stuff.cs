@@ -129,7 +129,7 @@ public class Stuff : MonoBehaviour
         Destroy(gameObject);
     }
     //A sandwich is trigger a stuff
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         for (int i = 0; i < sandwichWaitingList.Count; i++)
         {
