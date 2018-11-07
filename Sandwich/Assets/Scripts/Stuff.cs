@@ -40,7 +40,7 @@ public class Stuff : MonoBehaviour
         sandwichWaitingList = new List<GameObject>();
         NewsText = GameObject.FindGameObjectWithTag("NewsText");
         newsText = NewsText.GetComponent<Text>();
-        position = new Vector3(gameObject.transform.position.x, 0, gameObject.transform.position.z);
+        position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         timeBar.fillAmount = currentTime / maximumTime;
 
     }
@@ -75,7 +75,7 @@ public class Stuff : MonoBehaviour
         foreach (GameObject g in dataManager.sandwichWaitingList)
         {
             Sandwich s = g.GetComponent<Sandwich>();
-            s.SetDestination(this.position);
+            s.SetDestination(new Vector3 (this.position.x, 0 , this.position.z));
             s.goalObject = gameObject;
             dataManager.sandwichIdle -= 1;
             dataManager.sandwichHolding -= 1;
