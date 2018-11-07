@@ -5475,7 +5475,7 @@ MonoBehaviour:
   releasePos: {x: -2.24, y: 0, z: -8.5}
   releaseOffset: 1.5
   increaseProcess: 0.15
-  workingTime: 30
+  workingTime: 35
   clean: 0
   cleanMaterial: {fileID: 2100000, guid: 491407c80403b3c46b7f276134c53dfd, type: 2}
 --- !u!136 &1133609168
