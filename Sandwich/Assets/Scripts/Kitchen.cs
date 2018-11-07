@@ -8,6 +8,8 @@ public class Kitchen : Stuff
 {
     public float workingTime;
     public bool clean = false;
+    public Material cleanMaterial;
+
 
     void Update()
     {
@@ -83,7 +85,11 @@ public class Kitchen : Stuff
         //Is able to produce new sandwich
         clean = true;
         textManager.UpdateSandwich();
+        smoke.gameObject.SetActive(false);
         timeBar.fillAmount = currentTime / maximumTime;
+        //Change the material
+        transform.Find("pCube4").GetComponent<MeshRenderer>().material = cleanMaterial;
+      
     }
     //Produce new sandwiches
     public void Produce()

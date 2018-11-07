@@ -9,6 +9,7 @@ TagManager:
   - DataManager
   - TextManager
   - NewsText
+  - CleanStuff
   layers:
   - Default
   - TransparentFX

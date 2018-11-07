@@ -89,12 +89,12 @@ public class Stuff : MonoBehaviour
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} was cleaned by\n{1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by\n{1} sandwiches."
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} was cleaned by\n{1} sandwich"
+            newsText.text = string.Format("{0} was cleaned by\n{1} sandwich."
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
