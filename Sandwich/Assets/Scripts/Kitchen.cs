@@ -57,12 +57,12 @@ public class Kitchen : Stuff
     {
         if (workingSandwiches > 1)
         {
-            newsText.text = string.Format("{0} was cleaned by {1} sandwiches"
+            newsText.text = string.Format("{0} was cleaned by {1} sandwiches.\nMake more Sandwiches!"
             , gameObject.name, workingSandwiches);
         }
         else
         {
-            newsText.text = string.Format("{0} was cleaned by {1} sandwich"
+            newsText.text = string.Format("{0} was cleaned by {1} sandwich.\nMake more Sandwiches!"
             , gameObject.name, workingSandwiches);
         }
         //Increase progress
@@ -97,7 +97,6 @@ public class Kitchen : Stuff
     {
         newsText.text = string.Format("{0} produced 1 new sandwich", gameObject.name);
         dataManager.sandwichIdle += 1;
-        dataManager.sandwichTotal += 1;
         dataManager.sandwichTotal += 1;
         InstantiateSandwich();
         textManager.UpdateSandwich();
