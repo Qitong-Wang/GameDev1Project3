@@ -22,7 +22,7 @@ public class Camera_Control : MonoBehaviour {
     }
     void Update()
     {
-        if (!Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
         if (axes == RotationAxis.MouseX)
         {
